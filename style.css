@@ -1,0 +1,56 @@
+body {
+  background-color: #683849a9;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.opcion {
+  text-align: center;
+}
+
+
+img {
+  width: 300px;
+  height: auto;
+  border-radius: 12px;
+}
+
+select, button {
+  background-color: #c66587a9;
+  color: #fff;
+  margin-top: 20px;
+  padding: 3px;
+  font-size: 16px;
+  border-radius: 25px;
+}
+
+button {
+  background-color: #c66587a9;
+  color: white;
+  border-color: black;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+button:hover {
+  background-color: #912b4fa9;
+}
+
+input{
+  margin: 5px;
+  border-radius: 5px;
+  
+}
+.cantidadPasajeros1{
+  border-radius: 100%;
+
+}

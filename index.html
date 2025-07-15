@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Reserva Tren Solar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Primera opcion Experiencia 360 con Traslado -->
+  <div class="opcion1">
+    <img src="images/Exp360_Traslado.png" alt="Imagen Experiencia libre">
+    <div>
+      <label for="cantidadPasajeros1">Cantidad de Pasajeros:</label>
+      <select id="cantidadPasajeros1">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+    <div>
+      <label for="fecha1">Fecha de Ida:</label>
+      <input type="date" id="fecha1" value="2025-08-07">
+      <div>
+  <label for="origenId">Salgo de:</label>
+  <select id="origenId">
+    <option value="3893">Salta</option>
+    <option value="828">San Salvador de Jujuy</option>
+  </select>
+</div>
+
+    </div>
+   <div class="opcion1">
+  <button onclick="redirigir1('cantidadPasajeros1', 'fecha1')">Ver Disponibillidad</button>
+</div>
+</div>
+
+ <!-- Segunda opcion Experiencia 360 desde volcan -->
+  <div class="opcion2">
+    <img src="images/Exp_360_volcan.png" alt="Exp. 360 Volcan">
+    <div>
+      <label for="cantidadPasajeros2">Cantidad de Pasajeros:</label>
+      <select id="cantidadPasajeros2">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+    <div>
+      <label for="fecha2">Fecha de Ida:</label>
+      <input type="date" id="fecha2" value="2025-08-07">
+      <div>
+  <label for="origenId2">Salgo de:</label>
+  <select id="origenId2">
+    <option value="4620">Volcan</option>
+  </select>
+</div>
+
+    </div>
+   <div class="opcion2">
+  <button onclick="redirigir2('cantidadPasajeros2', 'fecha2')">Ver Disponibillidad</button>
+</div>
+</div>
+  <!-- Tercera opcion Experiencia 180 -->
+  <div class="opcion3">
+    <img src="images/Exp180.png" alt="Imagen Experiencia libre">
+    <div>
+      <label for="cantidadPasajeros3">Cantidad de Pasajeros:</label>
+      <select id="cantidadPasajeros3">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+    <div>
+      <label for="fecha3">Fecha de Ida:</label>
+      <input type="date" id="fecha3" value="2025-08-07">
+      <div>
+  <label for="destinoId">Voy a:</label>
+  <select id="destinoId">
+    <option value="4611">Maimara</option>
+    <option value="4620">Volcan</option>
+    
+  </select>
+</div>
+
+    </div>
+   <div class="opcion3">
+  <button onclick="redirigir3('cantidadPasajeros3', 'fecha3')">Ver Disponibillidad</button>
+</div>
+</div>
+
+
+
+<!-- Cargamos ambos JS -->
+<script src="script1.js"></script>
+<script src="script2.js"></script>
+<script src="script3.js"></script>
+</body>
+</html>
